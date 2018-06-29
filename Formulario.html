@@ -1,13 +1,25 @@
 <html>
 	<head>Formulario</head>
 	<body>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.google.com">
+
 		<form ACTION = 'subirArchivo.php' METHOD = 'POST'
 			ENCTYPE = 'multipart/form-data'>
-				<label> nombre: </label>
-        		<input type="text" name="nombre">
-       			</br>
+				<label><u> Id</u> </label>
+        		<input type="text" name="id_viajero" disabled="true">
+        		<br>
+        		<label>Nombre</label>
+        		<input type="text" name="nombre_viajero">
+        		<br>
+        		<label>Fecha</label>
+        		<input type="date" name="fecha_viaje">
+       			<br>
+       			<label>Boleto</label>
 				<INPUT TYPE = 'file' NAME = 'fileToUpload' id ='fileToUpload' />
-				<INPUT TYPE = 'submit' VALUE = 'Enviar foto' NAME = 'submit' />
+				<br>
+				<INPUT TYPE = 'submit' VALUE = 'Enviar todo' NAME = 'submit' />
 			</form>
+
 	</body>
 </html>
